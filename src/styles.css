@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0f1115;
+  --color-surface: #1b1f27;
+  --color-border: #2a2f3a;
+  --color-accent: #4c9a73;
+  --color-text-primary: #f5f6f8;
+  --color-text-muted: #8b93a1;
+
+  --font-sans: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+main > section {
+  scroll-margin-top: 72px;
+}
