@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero.css',
 })
 export class Hero {
-
+  protected readonly cvUrl = 'cv/rodrigo-rios-resume.pdf';
 }

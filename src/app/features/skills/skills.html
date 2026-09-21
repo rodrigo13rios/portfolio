@@ -1,1 +1,25 @@
-<p>skills works!</p>
+<div class="max-w-4xl mx-auto px-6 py-20">
+  <p class="text-accent text-sm font-medium mb-2">Skills</p>
+  <h2 class="text-3xl font-bold text-text-primary tracking-tight mb-10">
+    Tecnologías con las que trabajo
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+    @for (group of groups; track group.title) {
+      <div>
+        <h3 class="text-sm font-semibold text-text-muted uppercase tracking-wide mb-4">
+          {{ group.title }}
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          @for (skill of group.skills; track skill.name) {
+            <span
+              class="px-3 py-1.5 rounded-md bg-surface border border-border text-sm text-text-primary"
+            >
+              {{ skill.name }}
+            </span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>

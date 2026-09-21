@@ -12,14 +12,4 @@ export const PROJECTS: Project[] = [
     liveUrl: '',
     featured: true,
   },
-  {
-    id: 'placeholder-2',
-    title: 'Proyecto 2 (placeholder)',
-    description: 'Completar con la descripción del segundo proyecto.',
-    imageUrl: 'https://placehold.co/600x400?text=Proyecto+2',
-    techStack: ['Angular', 'Tailwind'],
-    githubUrl: '',
-    liveUrl: '',
-    featured: false,
-  },
 ];

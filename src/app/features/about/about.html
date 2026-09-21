@@ -1,1 +1,22 @@
-<p>about works!</p>
+<div class="max-w-3xl mx-auto px-6 py-20">
+  <p class="text-accent text-sm font-medium mb-2">Sobre mí</p>
+  <h2 class="text-3xl font-bold text-text-primary tracking-tight mb-6">
+    ¿Quién soy?
+  </h2>
+
+  <p class="text-text-muted leading-relaxed">
+    Soy desarrollador backend, graduado de la Tecnicatura en Programación.
+    Me especializo en Java con Spring Boot, y en particular en la implementación
+    de seguridad con Spring Security. Me interesa construir APIs sólidas,
+    bien estructuradas y preparadas para escalar del lado del servidor.
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
+    @for (item of highlights; track item.label) {
+      <div class="bg-surface border border-border rounded-lg px-5 py-4">
+        <p class="text-xs text-text-muted uppercase tracking-wide">{{ item.label }}</p>
+        <p class="text-text-primary font-medium mt-1">{{ item.value }}</p>
+      </div>
+    }
+  </div>
+</div>

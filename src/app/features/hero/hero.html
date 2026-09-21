@@ -1,1 +1,42 @@
-<p>hero works!</p>
+<div class="max-w-5xl mx-auto px-6 pt-32 pb-20 flex flex-col-reverse md:flex-row items-center gap-12 min-h-screen md:min-h-0">
+  <div class="flex-1 text-center md:text-left">
+    <p class="text-accent text-sm font-medium mb-3">Hola, soy</p>
+
+    <h1 class="text-4xl md:text-5xl font-bold text-text-primary tracking-tight">
+      Rodrigo Rios
+    </h1>
+
+    <h2 class="text-xl md:text-2xl font-medium text-text-muted mt-2">
+      Desarrollador Backend
+    </h2>
+
+    <p class="text-text-muted mt-6 max-w-md mx-auto md:mx-0 leading-relaxed">
+      Construyo APIs y sistemas backend robustos, del lado del servidor a la base de datos.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
+      <a
+        href="#projects"
+        class="px-6 py-3 rounded-lg bg-accent text-background font-medium text-sm hover:opacity-90 transition-opacity text-center"
+      >
+        Ver proyectos
+      </a>
+
+      <a
+        [href]="cvUrl"
+        download
+        class="px-6 py-3 rounded-lg border border-border text-text-primary font-medium text-sm hover:bg-surface transition-colors text-center"
+      >
+        Descargar CV
+      </a>
+    </div>
+  </div>
+
+  <div class="flex-shrink-0">
+    <img
+  src="images/profile.jpeg"
+  alt="Foto de Rodrigo Rios"
+  class="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover border-2 border-border"
+/>
+  </div>
+</div>
