@@ -6,20 +6,21 @@
 
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
     @for (group of groups; track group.title) {
-      <div>
-        <h3 class="text-sm font-semibold text-text-muted uppercase tracking-wide mb-4">
-          {{ group.title }}
-        </h3>
-        <div class="flex flex-wrap gap-2">
-          @for (skill of group.skills; track skill.name) {
-            <span
-              class="px-3 py-1.5 rounded-md bg-surface border border-border text-sm text-text-primary"
-            >
-              {{ skill.name }}
-            </span>
-          }
-        </div>
+    <div>
+      <h3 class="text-sm font-semibold text-text-muted uppercase tracking-wide mb-4">
+        {{ group.title }}
+      </h3>
+      <div class="flex flex-wrap gap-2">
+        @for (skill of group.skills; track skill.name) {
+        <span
+          class="group inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-surface border border-border text-sm text-text-primary">
+          <i [class]="skill.icon" class="text-base text-text-muted group-hover:text-text-primary transition-colors"
+            aria-hidden="true"></i>
+          {{ skill.name }}
+        </span>
+        }
       </div>
+    </div>
     }
   </div>
 </div>
