@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     title: 'Ryse Games',
     description:
       'Tienda virtual de videojuegos. Gestiona la compra de juegos desde el lado del cliente, mientras que las desarrolladoras pueden ver estadísticas de ventas y subir sus propios videojuegos.',
-    imageUrl: 'https://placehold.co/600x400?text=Ryse+Games',
+    imageUrl: 'images/Portada.png',
     techStack: ['Angular', 'TypeScript', 'Spring Boot', 'MySQL'],
     githubUrl: 'https://github.com/SebastianKloster/RyseGames',
     liveUrl: '',
